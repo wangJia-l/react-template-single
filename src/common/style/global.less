@@ -1,0 +1,82 @@
+/**
+ * @file global style based on normalize.css
+ * @author zhaoyadong
+ */
+
+@import "~normalize.css/normalize.css";
+@import "./reset.less";
+@import "./themes/index.less";
+
+body,
+button,
+input,
+select,
+textarea {
+    font-family: @font-family;
+    line-height: 1.5;
+}
+
+body {
+    background-color: @body-background;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+}
+
+ol {
+    list-style-type: decimal;
+    list-style-position: inside;
+}
+
+.cf::before,
+.cf::after {
+    content: " ";
+    display: table;
+}
+
+.cf::after {
+    clear: both;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+input::placeholder {
+    font-size: 12px;
+    font-family: @font-family;
+    color: @gray-5;
+}
+
+.ant-layout {
+    background: @body-background;
+}
+
+.ant-layout-header {
+    background: @body-background;
+    height: auto;
+    padding: 0;
+}
+
+.ant-layout-footer {
+    padding: 0;
+}
+
+.ant-layout-content {
+    background: @body-background;
+}
