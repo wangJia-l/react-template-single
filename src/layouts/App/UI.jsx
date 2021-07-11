@@ -87,7 +87,7 @@ function App(props) {
                 <Layout>
                     <Sider theme="light">
                         <AiNav {...{
-                            title: '自动驾驶云业务部',
+                            title: '百度',
                             menu: MENUS.filter(m => !m.auth || m.auth === userInfo.role),
                             defaultOpenKeys: defaultOpenKey,
                             defaultSelectedKeys: defaultSelectedKey,
