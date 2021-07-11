@@ -7,8 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "NODE_ENV=production PLATFORM=online webpack --config scripts/webpack.prod.js",
     "build:qa": "NODE_ENV=production PLATFORM=qa webpack --config scripts/webpack.prod.js",
-    "start": "NODE_ENV=development PLATFORM=rd webpack serve --config scripts/webpack.dev.js",
-    "start:mock": "NODE_ENV=development PLATFORM=rd MOCK=true webpack serve --config scripts/webpack.dev.js",
+    "serve": "NODE_ENV=development PLATFORM=rd webpack serve --config scripts/webpack.dev.js",
+    "serve:mock": "NODE_ENV=development PLATFORM=rd MOCK=true webpack serve --config scripts/webpack.dev.js",
     "eslint-fix": "eslint --fix --ext .js --ext .jsx --ext .san src",
     "stylelint-fix": "stylelint --fix **/*.{html,san,css,sass,scss} src"
   },
