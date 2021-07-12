@@ -1,27 +1,21 @@
-/**
- * @file webpack paths
- * @author zhaoyadong
- */
+/* eslint-disable */
 const path = require('path');
 const fs = require('fs');
 // 获取当前工作目录
 const appDirectory = fs.realpathSync(process.cwd());
 // 从相对路径中解析绝对路径
-const resolveApp = (relativePath) => path.resolve(appDirectory, relativePath);
+const resolveApp = relativePath => path.resolve(appDirectory, relativePath);
 // 默认的模块扩展名
 const moduleFileExtensions = ['js', 'jsx', 'ts', 'tsx', 'json'];
 // 解析模块路径
 const resolveModule = (resolveFn, filePath) => {
     // 查看文件存不存在
-    const extension = moduleFileExtensions.find((extension) =>
-        fs.existsSync(resolveFn(`${filePath}.${extension}`))
-    );
+    const extension = moduleFileExtensions.find(extension => fs.existsSync(resolveFn(`${filePath}.${extension}`)));
     if (extension) {
         return resolveFn(`${filePath}.${extension}`);
     }
     return resolveFn(`${filePath}.js`); // 如果没有默认就是js
 };
-
 module.exports = {
     appStaticPath: 'static',
     appStaticFileUrlPrefix: '/',

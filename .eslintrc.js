@@ -28,8 +28,6 @@ module.exports = {
         'react/jsx-uses-react': 2,
         'react/jsx-no-bind': 0,
         'react-hooks/rules-of-hooks': 0,
-        'indent': 'off',
-        'quotes': ['error', 'always']
     },
     'settings': {
         'react': {

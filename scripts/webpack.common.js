@@ -1,7 +1,4 @@
-/**
- * @file webpack common
- * @author zhaoyadong
- */
+/* eslint-disable */
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const loaderUtils = require('loader-utils');
@@ -14,84 +11,57 @@ const lessRegex = /\.(less)$/;
 const lessModuleRegex = /\.module\.(less)$/;
 const imageInlineSizeLimit = 4 * 1024;
 const isDev = process.env.NODE_ENV === 'development';
-
 const getStyleLoaders = (isDev, cssLoaderOptions = {}, preLoader) => {
-
     const loaders = [
         'style-loader',
         {
             loader: 'css-loader',
             options: Object.assign(
                 {
-                    sourceMap: isDev
+                    sourceMap: isDev,
                 },
                 cssLoaderOptions
             ),
         },
         'postcss-loader',
     ];
-
     if (preLoader) {
         loaders.push(preLoader);
     }
-
     return loaders;
 };
-
 const getLocalIdentFn = isDev => {
-    return (
-        context,
-        localIdentName,
-        localName,
-        options
-    ) => {
+    return (context, localIdentName, localName, options) => {
         // 获取更好命名，移除根目录、src目录，并替换/为-
-        const className = context.context
-            // remove root context
-            .replace(context.rootContext, '')
-            // remove src
-            .replace('/src/', '')
-            .replace(/\//g, '-')
-            + '_'
-            + localName;
-
+        const className =
+            context.context
+                // remove root context
+                .replace(context.rootContext, '')
+                // remove src
+                .replace('/src/', '')
+                .replace(/\//g, '-') +
+            '_' +
+            localName;
         // 获取hash数字
-        const hash = loaderUtils.getHashDigest(
-            className,
-            'md5',
-            'base64',
-            8
-        );
-
+        const hash = loaderUtils.getHashDigest(className, 'md5', 'base64', 8);
         // 是否增加hash到className上
         const isUseHashClassNameInProd = false;
-
-        return isDev
-            ? className
-            : (
-                isUseHashClassNameInProd
-                    ? hash
-                    : className
-            );
+        return isDev ? className : isUseHashClassNameInProd ? hash : className;
     };
 };
-
-module.exports = function (options) {
-
+module.exports = function(options) {
     return {
         mode: options.mode,
         entry: {
-            app: [
-                ...(isDev ? ['react-hot-loader/patch'] : []),
-                paths.appIndexJs,
-            ],
+            app: [...(isDev ? ['react-hot-loader/patch'] : []), paths.appIndexJs],
         },
         output: {
             publicPath: '/',
             path: paths.appBuild,
         },
         cache: {
-            type: 'memory', // memory:使用内容缓存 filesystem：使用文件缓存
+            // 使用持久化缓存
+            type: 'filesystem', // memory:使用内容缓存 filesystem：使用文件缓存
         },
         devtool: false,
         module: {
@@ -164,7 +134,8 @@ module.exports = function (options) {
                             test: /\.(svg|jpe?g|png|gif|ico)$/,
                             use: {
                                 loader: 'url-loader',
-                                options: { // 配置
+                                options: {
+                                    // 配置
                                     outputPath: 'images/', // 输出到images文件夹下
                                     regExp: /(\/src|\/node_modules)([^.]+)/,
                                     name(file) {
@@ -182,7 +153,8 @@ module.exports = function (options) {
                             test: /\.(eot|ttf|woff2?)$/,
                             use: {
                                 loader: 'file-loader',
-                                options: { // 配置
+                                options: {
+                                    // 配置
                                     outputPath: 'fonts/', // 输出到fonts文件夹下
                                     regExp: /(\/src|\/node_modules)([^.]+)/, // remove `src`|`node_modules` from path
                                     name(file) {
@@ -204,28 +176,26 @@ module.exports = function (options) {
                                 /react-app-polyfill/,
                             ],
                             use: [
-                                { loader: 'eslint-loader' },
                                 {
                                     loader: 'babel-loader',
                                     options: {
                                         presets: [
-                                            ['@babel/preset-env', {
-                                                useBuiltIns: 'usage',
-                                                corejs: '3',
-                                            }],
+                                            [
+                                                '@babel/preset-env',
+                                                {
+                                                    useBuiltIns: 'usage',
+                                                    corejs: '3',
+                                                },
+                                            ],
                                             '@babel/preset-react',
                                         ],
-                                        plugins: [
-                                            'react-hot-loader/babel',
-                                            '@babel/plugin-proposal-class-properties',
-                                        ],
+                                        plugins: ['react-hot-loader/babel', '@babel/plugin-proposal-class-properties'],
                                     },
                                 },
                             ],
                         },
                     ],
                 },
-
             ],
         },
         devServer: {},
@@ -253,8 +223,8 @@ module.exports = function (options) {
             extensions: ['.js', '.jsx', '.css'],
             alias: {
                 '@': paths.appSrc,
-                'src': paths.appSrc,
-                'public': paths.appPublic,
+                src: paths.appSrc,
+                public: paths.appPublic,
             },
             mainFiles: ['index', 'UI'],
         },
