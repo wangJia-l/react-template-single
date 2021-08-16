@@ -1,9 +1,4 @@
 /**
- * @file localStorage
- * @author zhaoyadong
- */
-
-/**
  * 删除缓存Key
  * @param {String} key 缓存的Key
  */

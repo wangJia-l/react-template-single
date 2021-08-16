@@ -1,8 +1,3 @@
-/**
- * @file Loading UI
- * @author zhaoyadong (zhaoyadong@baidu.com)
- */
-
 import React, { PureComponent } from 'react';
 import ReactDOM from 'react-dom';
 import { Spin } from 'antd';

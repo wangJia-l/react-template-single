@@ -1,7 +1,3 @@
-/**
- * @file Home index 绑定相关的方法
- * @author zhaoyadong (zhaoyadong@baidu.com)
- */
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import {

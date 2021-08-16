@@ -1,7 +1,3 @@
-/**
- * @file mock index
- * @author zhaoyadong (zhaoyadong@baidu.com)
- */
 import Mock from 'mockjs';
 import getUser from './getUser';
 import getList from './getList';

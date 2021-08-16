@@ -1,7 +1,3 @@
-/**
- * @file 绑定账号 - 登录账号 - connect
- * @author zhaoyadong (zhaoyadong@baidu.com)
- */
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import {

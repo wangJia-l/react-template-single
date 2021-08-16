@@ -1,9 +1,4 @@
 /**
- * @file common config
- * @author zhaoyadong (zhaoyadong@baidu.com)
- */
-
-/**
  * 一分钟的毫秒值 60000 = 60 * 1000
  */
 export const MILLISECONDS_MIN = 60000;

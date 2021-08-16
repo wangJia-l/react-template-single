@@ -1,7 +1,3 @@
-/**
- * @file 配置页面数据更新
- * @author zhaoyadong (zhaoyadong@baidu.com)
- */
 import { SET_SETTINGS, RESET_SETTINGS } from './action';
 
 const initialState = {

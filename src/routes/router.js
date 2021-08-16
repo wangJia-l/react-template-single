@@ -1,7 +1,3 @@
-/**
- * @file router
- * @author zhaoyadong (zhaoyadong@baidu.com)
- */
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import AdminAuthRoute from 'src/components/AdminAuthRoute';

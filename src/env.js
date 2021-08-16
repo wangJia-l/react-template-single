@@ -1,7 +1,3 @@
-/**
- * @file env
- * @author zhaoyadong (zhaoyadong@baidu.com)
- */
 import Cookie from 'js-cookie';
 import _ from 'lodash';
 

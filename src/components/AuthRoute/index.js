@@ -1,8 +1,3 @@
-/**
- * @file AuthRoute index
- * @author zhaoyadong (zhaoyadong@baidu.com)
- */
-
 import {
     connect,
 } from 'react-redux';

@@ -1,8 +1,3 @@
-/**
- * @file List api
- * @author zhaoyadong (zhaoyadong@baidu.com)
- */
-
 import { get } from 'src/common/request';
 
 // 获取API列表

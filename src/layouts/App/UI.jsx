@@ -1,8 +1,3 @@
-/**
- * @file App UI
- * @author zhaoyadong (zhaoyadong@baidu.com)
- */
-
 import React, { useState, useEffect } from 'react';
 
 import {

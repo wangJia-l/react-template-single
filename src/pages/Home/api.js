@@ -1,8 +1,3 @@
-/**
- * @file home api
- * @author zhaoyadong (zhaoyadong@baidu.com)
- */
-
 import { get } from 'src/common/request';
 
 // 查询首页的轮播图数据

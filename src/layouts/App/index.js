@@ -1,7 +1,3 @@
-/**
- * @file App index 布局文件下的index
- * @author zhaoyadong (zhaoyadong@baidu.com)
- */
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 

@@ -1,8 +1,3 @@
-/**
- * @file Redux async action creator
- * @author zhaoyadong
- */
-
 import _ from 'lodash';
 
 /**

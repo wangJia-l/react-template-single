@@ -1,8 +1,3 @@
-/**
- * @file redux store creator
- * @author zhaoyadong (zhaoyadong@baidu.com)
- */
-
 import {
     createStore,
     applyMiddleware,

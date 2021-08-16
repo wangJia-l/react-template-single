@@ -1,8 +1,3 @@
-/**
- * @file user action
- * @author zhaoyadong
- */
-
 import {
     createBEAsyncAction,
 } from 'src/common/redux/asyncActionCreator';

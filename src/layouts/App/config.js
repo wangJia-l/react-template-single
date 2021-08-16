@@ -1,7 +1,3 @@
-/**
- * @file Slider config
- * @author zhaoyadong (zhaoyadong@baidu.com)
- */
 export const MENUS = [
     {
         type: 'MenuItem',

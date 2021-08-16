@@ -1,8 +1,3 @@
-/**
- * @file user api
- * @author zhaoyadong
- */
-
 import {
     get,
 } from 'src/common/request';

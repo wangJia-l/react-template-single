@@ -1,7 +1,3 @@
-/**
- * @file LoadScript 动态加载js组件
- * @author zhaoyadong (zhaoyadong@baidu.com)
- */
 import React from 'react';
 import { PropTypes } from 'prop-types';
 

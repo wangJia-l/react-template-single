@@ -1,8 +1,3 @@
-/**
- * @file createRootReducer
- * @author zhaoyadong (zhaoyadong@baidu.com)
- */
-
 import {
     combineReducers,
 } from 'redux';

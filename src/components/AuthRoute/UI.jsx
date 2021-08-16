@@ -1,7 +1,3 @@
-/**
- * @file AuthRoute UI
- * @author zhaoyadong (zhaoyadong@baidu.com)
- */
 import React from 'react';
 import {
     Route,

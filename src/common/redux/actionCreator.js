@@ -1,9 +1,4 @@
 /**
- * @file Redux sync action creator
- * @author zhaoyadong
- */
-
-/**
  * Create sync action creator
  *
  * @param {string} ACTION_NAME action name

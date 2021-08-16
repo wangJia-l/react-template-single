@@ -1,7 +1,3 @@
-/**
- * @file index
- * @author zhaoyadong (zhaoyadong@baidu.com)
- */
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { ConnectedRouter } from 'connected-react-router';
