@@ -1,0 +1,78 @@
+{
+    "name": "ihs-platform-Integrate-operate",
+    "version": "1.0.0",
+    "description": "综合运维管理平台",
+    "private": true,
+    "scripts": {
+        "serve": "vue-cli-service serve --max_old_space_size=4096",
+        "build:prod": "NODE_ENV=production vue-cli-service build",
+        "build:stag": "NODE_ENV=staging vue-cli-service build",
+        "test:unit": "vue-cli-service test:unit",
+        "lint": "vue-cli-service lint",
+        "lintcss": "stylelint 'src/**/*.{css,vue,less}' --fix",
+        "analyze": "vue-cli-service build --modern --report",
+        "preview": "cd dist && npx http-server -a 127.0.0.1 -p 7000 -o -g -c-1",
+        "prettier": "prettier --write 'src/**/*.{vue,ts,js,less,css}'",
+        "fix-memory-limit": "cross-env LIMIT=4096 increase-memory-limit"
+    },
+    "dependencies": {
+        "@babel/core": "^7.15.8",
+        "@babel/preset-env": "^7.15.8",
+        "axios": "^0.20.0",
+        "copy-webpack-plugin": "5.0.5",
+        "core-js": "^3.6.5",
+        "cross-env": "^7.0.3",
+        "date-fns": "^2.8.1",
+        "echarts": "4.9.0",
+        "element-ui": "^2.15.6",
+        "gcoord": "^0.3.2",
+        "increase-memory-limit": "^1.0.7",
+        "moment": "^2.29.1",
+        "qrcodejs2": "^0.0.2",
+        "quagga": "^0.12.1",
+        "url-loader": "^4.1.1",
+        "vant": "^2.12.20",
+        "vue": "^2.6.11",
+        "vue-router": "^3.2.0",
+        "vue-style-loader": "^4.1.3",
+        "vuex": "^3.4.0"
+    },
+    "devDependencies": {
+        "@babel/eslint-parser": "^7.16.3",
+        "@babel/eslint-plugin": "^7.14.5",
+        "@babel/plugin-proposal-optional-chaining": "^7.16.0",
+        "@ecomfe/eslint-config": "^7.3.0",
+        "@ecomfe/stylelint-config": "^1.1.2",
+        "@vue/cli-plugin-babel": "~4.5.0",
+        "@vue/cli-plugin-eslint": "~4.5.0",
+        "@vue/cli-plugin-router": "~4.5.0",
+        "@vue/cli-plugin-unit-jest": "~4.5.0",
+        "@vue/cli-plugin-vuex": "~4.5.0",
+        "@vue/cli-service": "~4.5.0",
+        "@vue/eslint-config-prettier": "^5.0.0",
+        "@vue/test-utils": "^1.0.3",
+        "babel-eslint": "^7.2.3",
+        "babel-plugin-component": "^1.1.1",
+        "compression-webpack-plugin": "^6.0.3",
+        "eslint": "7.5",
+        "eslint-plugin-vue": "7.x",
+        "less": "^3.12.2",
+        "less-loader": "^7.0.0",
+        "lint-staged": "^9.5.0",
+        "nprogress": "^0.2.0",
+        "prettier": "^1.19.1",
+        "style-resources-loader": "^1.3.3",
+        "stylelint": "^12.0.1",
+        "stylelint-webpack-plugin": "^1.1.2",
+        "vue-template-compiler": "^2.6.11"
+    },
+    "lint-staged": {
+        "src/**/*.{js,ts,vue}": [
+            "prettier --check",
+            "eslint"
+        ],
+        "src/**/*.{vue,htm,html,css,scss,less}": [
+            "stylelint"
+        ]
+    }
+}

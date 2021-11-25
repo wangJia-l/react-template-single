@@ -1,0 +1,340 @@
+/**
+ * 用于覆盖 ElementUI 的样式（推荐在 mixins 中覆盖 Mixin 样式，在组件中手动调用的方式覆盖 ElementUI 的样式）
+ */
+// Dialog
+.el-dialog {
+    .el-dialog__header {
+        border-bottom: 1px solid #e5e5e5;
+    }
+}
+
+.el-drawer {
+    .el-drawer__header {
+        border-bottom: 1px solid #e5e5e5;
+    }
+}
+
+.el-card.is-always-shadow,
+.el-card.is-hover-shadow:focus,
+.el-card.is-hover-shadow:hover {
+    background: #fff;
+    box-shadow: 0 12px 16px 1px rgba(0, 21, 51, 0.03) !important;
+    border-radius: 8px !important;
+    // border: none !important;
+}
+
+.el-tooltip__popper {
+    max-width: 800px;
+}
+
+.el-pagination.is-background .btn-prev:disabled {
+    background-color: #081e43;
+    border: 1px solid #0d3271;
+    color: rgba(255, 255, 255, 1);
+    font-size: 16px;
+}
+
+.el-pagination.is-background .btn-next {
+    background-color: #081e43;
+    border: 1px solid #0d3271;
+    color: rgba(255, 255, 255, 1);
+    font-size: 16px;
+}
+
+.el-pagination.is-background .el-pager li {
+    background-color: #081e43;
+    border: 1px solid #0d3271;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 16px;
+    line-height: 37px;
+}
+
+.el-pagination.is-background .el-pager li:not(.disabled).active {
+    background-color: #1246a6;
+    border-color: #1246a6;
+}
+
+.el-pagination.is-background .btn-next,
+.el-pagination.is-background .btn-prev,
+.el-pagination.is-background .el-pager li {
+    background-color: #081e43;
+    border: 1px solid #0d3271;
+    color: #fff;
+}
+
+.el-pagination__jump {
+    color: #fff;
+    font-size: 14px !important;
+}
+
+.el-pager li {
+    // width: 37px;
+    height: 37px;
+    line-height: 37px;
+}
+
+.el-pagination button,
+.el-pagination span:not([class*=suffix]) {
+    width: max-content !important;
+    color: #fff;
+    font-size: 16px;
+    line-height: 37px;
+    height: 37px;
+}
+
+.el-pagination__editor.el-input .el-input__inner {
+    height: 37px;
+    line-height: 37px;
+    background-color: #081e43;
+    border: 1px solid #0d3271;
+}
+
+.el-table {
+    color: #9cb9d6;
+    font-size: 14px !important;
+    background-color: transparent;
+
+    .el-button--text {
+        color: #02d8f2;
+    }
+}
+
+.el-table thead {
+    color: #536c9b;
+}
+
+.el-table th {
+    background-color: #0d2248;
+    border-right: none;
+}
+
+.el-table td.el-table__cell, .el-table th.el-table__cell.is-leaf {
+    border-bottom: 1px solid #133267;
+}
+
+.el-table th.el-table__cell {
+    background-color: #0d2248;
+}
+
+.el-table tr {
+    background-color: rgba(10, 28, 53, 0.51);
+    border-right: none;
+}
+
+.el-table--enable-row-transition .el-table__body td {
+    border-right: none;
+    padding: 5px 0 !important;
+}
+
+.el-table td,
+.el-table th.is-leaf {
+    border-bottom: 0.5px solid #133267;
+    border-right: none;
+}
+
+.el-table--border td,
+.el-table--border th,
+.el-table__body-wrapper .el-table--border.is-scrolling-left~.el-table__fixed {
+    border-right: 0.5px solid #5a648a;
+}
+
+.el-table__row {
+    background-color: #293567;
+
+    &.hover-row>td {
+        background-color: #143f8a !important;
+    }
+
+    &>td:last-child {
+        border-right: 0;
+    }
+}
+
+.el-table--small th {
+    padding: 16px 0;
+}
+
+.el-table--mini,
+.el-table__expand-icon {
+    font-size: 16px !important;
+}
+
+.el-table--group {
+    border: 1px solid #838aaa;
+}
+
+.el-table--border {
+    border: 0;
+}
+
+.el-input {
+    border-radius: 0;
+}
+
+.el-input__inner {
+    color: #fff;
+    border: 0;
+}
+
+.el-input.is-disabled .el-input__inner {
+    background: #05101d !important;
+    border: 1px solid #0d3271 !important;
+}
+
+.el-input .el-input__inner {
+    height: 37px;
+    line-height: 37px;
+    background: #081e43;
+    border: 1px solid #0d3271;
+    border-radius: 0;
+}
+
+.el-select-dropdown {
+    border: 0;
+    background-color: #0c2144;
+    color: #536c9b;
+}
+
+.el-select-dropdown__item {
+    color: #8a96b3;
+}
+
+.el-select-dropdown__item:hover,
+.el-select-dropdown__item.hover,
+.el-select-dropdown__item.selected {
+    background-color: #264a96;
+    color: #fff;
+    font-weight: 400;
+}
+
+.el-loading-mask.is-fullscreen {
+    display: none;
+}
+
+.el-breadcrumb__inner a,
+.el-breadcrumb__inner.is-link {
+    color: #536c9b;
+    font-size: 12px;
+}
+
+.el-breadcrumb__separator {
+    color: #536c9b;
+    font-size: 12px;
+}
+
+.el-breadcrumb__item:last-child .el-breadcrumb__inner,
+.el-breadcrumb__item:last-child .el-breadcrumb__inner a,
+.el-breadcrumb__item:last-child .el-breadcrumb__inner a:hover,
+.el-breadcrumb__item:last-child .el-breadcrumb__inner:hover {
+    color: #d9ebff;
+    font-size: 12px;
+}
+
+.el-breadcrumb__inner a:hover,
+.el-breadcrumb__inner.is-link:hover {
+    color: #d9ebff;
+}
+
+.el-button--primary {
+    background-color: #1246a6;
+    border-color: #1246a6;
+}
+
+.load-progress-page {
+    position: absolute;
+    width: 900px !important;
+    height: 600px !important;
+    left: 50%;
+    top: 50%;
+    margin-left: -450px;
+    margin-top: -300px;
+    background-color: transparent !important;
+}
+
+.load-progress-page .load-progress {
+    width: 100% !important;
+    height: 100% !important;
+    padding: 0.8rem 1rem !important;
+}
+
+.load-progress-page .load-progress .percent {
+    font-size: 80px !important;
+}
+
+.load-progress-page .load-progress .message {
+    font-size: 50px !important;
+}
+
+.load-progress-page .load-progress .bar {
+    margin-bottom: 0.4rem !important;
+    height: 0.3rem !important;
+}
+
+.el-popover {
+    background: #092659;
+    border: none;
+}
+
+.el-popper[x-placement^=bottom] .popper__arrow::after {
+    border-bottom-color: #092659;
+}
+
+.el-popper[x-placement^=bottom] .popper__arrow {
+    border-bottom-color: #092659;
+}
+
+.el-picker-panel {
+    color: #cfe0ff;
+    background-color: #0a3066;
+    border: 1px solid #133e86;
+}
+
+.el-date-picker__header-label {
+    color: #cfe0ff;
+}
+
+.el-picker-panel__icon-btn {
+    color: #9bb1da;
+}
+
+.el-date-table th {
+    color: #9bb1da;
+    border-bottom: 1px solid #133e86;
+}
+
+.el-date-table td.next-month, .el-date-table td.prev-month {
+    color: #446494;
+}
+
+.el-date-table td.available {
+    color: #cfe0ff;
+}
+
+.el-date-table td span {
+    border-radius: 4px;
+}
+
+.el-popper[x-placement^=top] .popper__arrow::after, 
+.el-popper[x-placement^=top] .popper__arrow {
+    border-top-color: #133e86;
+}
+
+.el-radio__input.is-checked .el-radio__inner {
+    border-color: #1246a6;
+    background: #1246a6;
+}
+
+.el-radio__input.is-checked+.el-radio__label {
+    color: #1246a6;
+}
+
+.el-date-range-picker__content.is-left {
+    border-right: 1px solid #133e86;
+}
+
+.el-date-table td.in-range div, 
+.el-date-table td.in-range div:hover, 
+.el-date-table.is-week-mode .el-date-table__row.current div, 
+.el-date-table.is-week-mode .el-date-table__row:hover div {
+    background-color: #409eff;
+}
