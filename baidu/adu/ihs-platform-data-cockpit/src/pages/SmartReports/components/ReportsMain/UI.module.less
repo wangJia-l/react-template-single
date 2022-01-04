@@ -1,0 +1,78 @@
+.SmartReports {
+    width: 100%;
+    height: 880px;
+    margin-top: 20px;
+    background-color: rgba(12, 40, 79, 0.7);
+    border: 1px solid rgba(212, 225, 255, 0.12);
+    box-sizing: border-box;
+    border-top: none;
+
+    .titleName {
+        width: 100%;
+        height: 68px;
+        padding:0  20px;
+        background-color: #061E49;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &> p{
+            color: #EDF2FF;
+            line-height: 68px;
+            font-size: 20px;
+            border-bottom: 1px solid #0F3776;
+        }
+    }
+
+    .content {
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+
+        .left {
+            width: 260px;
+            height: 100%;
+            overflow-y: scroll;
+            background-color: #0B1D3F;
+        }
+
+        .right {
+            width: calc(100% - 280px);
+            height: 100%;
+            overflow-y: auto;
+
+            .title {
+                width: 100%;
+                height: 41px;
+                background-color: #061E49;
+                padding: 0 0 0 20px;
+                box-sizing: border-box;
+                color: #EDF2FF;
+                line-height: 41px;
+                font-size: 16px;
+                font-weight: bold;
+            }
+
+            .cardList {
+                width: 100%;
+                margin-top: 20px;
+                
+                .itemCard {
+                    width: 100%;
+                    margin-bottom: 20px;
+
+                    .inputBox {
+                        width: 100%;
+                        height: 42px;
+                        margin-top: 20px;
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                }
+            }
+        }
+    }
+}

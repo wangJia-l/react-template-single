@@ -1,0 +1,32 @@
+.ClassK {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    .content {
+        width: 100%;
+        height: calc(100% - 70px) !important;
+        padding: 0 20px;
+        box-sizing: border-box;
+
+        .tableBox {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+
+            .table {
+                width: 100%;
+                height: calc(100% - 80px);
+                overflow-y: auto;
+            }
+
+            .pagination {
+                width: 100%;
+                height: 80px;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+            }
+        }
+    }
+}

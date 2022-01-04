@@ -1,0 +1,62 @@
+export const MENU_CONFIG = {
+    title: '数据挖掘于分析',
+    subTitle: 'Data mining and analysis',
+    mainMenu: [
+        {
+            key: 'main-1',
+            name: '数据总览',
+            href: '/dataanalysis/home',
+            path: '/dataanalysis/home',
+            id: 0,
+        },
+        {
+            key: 'main-2',
+            name: '路网专题',
+            href: '/dataanalysis/roadNetwork',
+            path: '/dataanalysis/roadNetwork',
+            id: 1,
+        },
+        {
+            key: 'main-3',
+            name: '智能视频专题',
+            href: '/dataanalysis/intelligentVideo',
+            path: '/dataanalysis/intelligentVideo',
+            id: 2,
+        },
+        {
+            key: 'main-4',
+            name: '客运接驳专题',
+            href: '/dataanalysis/passenger',
+            path: '/dataanalysis/passenger',
+            id: 3,
+        },
+        {
+            key: 'main-5',
+            name: '养护专题',
+            href: '/dataanalysis/maintenance',
+            path: '/dataanalysis/maintenance',
+            id: 4,
+        },
+        {
+            key: 'main-6',
+            name: '服务区专题',
+            href: '/dataanalysis/serviceArea',
+            path: '/dataanalysis/serviceArea',
+            id: 5,
+        },
+        // {
+        //     key: 'main-7',
+        //     name: '大数据GIS专题',
+        //     href: '/bigData',
+        //     path: '/bigData',
+        //     id: 6,
+        // },
+        {
+            key: 'main-8',
+            name: '车路协同专题',
+            href: '/dataanalysis/carRoad',
+            path: '/dataanalysis/carRoad',
+            id: 7,
+        },
+    ],
+};

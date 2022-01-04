@@ -1,0 +1,70 @@
+.TableModule {
+    width: 708px;
+    background: rgba(10,28,53,0.50);
+    border: 0.5px solid rgba(212,225,255,0.12);
+    border-radius: 7px;
+    margin-bottom: 20px;
+    .title {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding-top: 20px;
+        .TitleLeft {
+            display: inline-block;
+            width: 4px;
+            height: 12px;
+            background: #47C2FF;
+            margin-left: 20px;
+        }
+        .TitleText {
+            color: #DCEDFF;
+            font-size: 16px;
+            margin-left: 15px;
+        }
+    }
+    .form {
+        width: 708px;
+        display: flex;
+        flex-wrap: wrap;
+        .ChunkItem {
+            display: flex;
+            margin-top: 40px;
+            margin-left: 40px;
+            align-items: center;
+            .label {
+                font-size: 14px;
+                color: #DCEDFF;
+                padding-right: 20px;
+            }
+            .chunk {
+                cursor: pointer;
+                .ItemChunk,
+                .active {
+                    display: inline-block;
+                    width: 80px;
+                    height: 42px;
+                    text-align: center;
+                    line-height: 42px;
+                    font-size: 12px;
+                }
+                .ItemChunk {
+                    background: #072045;
+                    border: 1px solid #00366A;
+                    color: #43639F;
+ 
+                }
+                .active {
+                    background: #0E3A85;
+                    color: #9CCBFF;
+                    border: 1px solid #265EBB;
+                }
+            }
+        }
+
+    }
+    .TableArea {
+       margin-top: 40px;
+       padding-left: 40px;
+       padding-right: 20px;
+    }
+}

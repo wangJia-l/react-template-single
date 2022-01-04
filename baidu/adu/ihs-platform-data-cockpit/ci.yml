@@ -1,0 +1,34 @@
+Global:
+    tool: build_submitter
+
+Default:
+    profile: [qa]
+
+Profiles:
+    - profile:
+      name: qa
+      tool: build_submitter
+      env:   DECK_CENTOS6U3_K3
+      command: sh ./build/build.sh
+      release: false
+
+    - profile:
+      name: rd
+      tool: build_submitter
+      env:   DECK_CENTOS6U3_K3
+      command: sh ./build/build.sh
+      release: false
+
+    - profile:
+      name: preonline
+      tool: build_submitter
+      env:   DECK_CENTOS6U3_K3
+      command: sh ./build/build.sh
+      release: false
+
+    - profile:
+      name:  online
+      tool:  build_submitter
+      env:   DECK_CENTOS6U3_K3
+      command: sh ./build/build.sh
+      release: true

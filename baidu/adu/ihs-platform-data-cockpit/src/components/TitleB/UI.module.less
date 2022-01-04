@@ -1,0 +1,56 @@
+.TitleB {
+    width: calc(100% - 200px);
+    height: 70px;
+    padding: 14px 0 14px 43px;
+    position: relative;
+    display: flex;
+
+    &::before {
+        position: absolute;
+        top: 28px;
+        left: 32px;
+        width: 4px;
+        height: 12px;
+        content: '';
+        background-color: #47C2FF;
+    }
+
+    .titleNameBox {
+        width: max-content;
+        
+        .titleName {
+            color: #EDF2FF;
+            font-size: 16px;
+            letter-spacing: 1px;
+            text-shadow: 0 2px 6px #152547;
+            font-weight: 600;
+            line-height: 42px;
+        }
+
+        .input {
+            width: 100%;
+            min-width: 300px;
+        }
+    }
+
+    .cardTagBox {
+        padding-left: 20px;
+        display: flex;
+        align-items: center;
+
+        .item {
+            width: max-content;
+            height: 23px;
+            padding: 0 5px;
+            margin-right: 5px;
+            box-sizing: border-box;
+            background: rgba(26, 69, 128, 0.68);
+            background-image: linear-gradient(180deg, rgba(62, 103, 196, 0.50) 0%, rgba(19, 28, 47, 0.50) 100%);
+            border: 1px solid rgba(115, 155, 245, 0.39);
+            font-size: 14px;
+            font-weight: 600;
+            color: #EDF2FF;
+            letter-spacing: 1px;
+        }
+    }
+}

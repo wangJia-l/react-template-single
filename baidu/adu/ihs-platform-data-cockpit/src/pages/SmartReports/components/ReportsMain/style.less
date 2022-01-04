@@ -1,0 +1,160 @@
+// width={1920} {
+//     width: 1920px;
+//     height: 1080px;
+// }
+
+.box-container {
+    width: 100%;
+    height: 100%;
+    // position: absolute;
+
+    .delete-meng-layer {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 99;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(8, 19, 40, 0.7);
+        border: 1px solid #0F3776;
+        box-sizing: border-box;
+    }
+}
+
+.box-model {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: 1px solid rgba(212, 225, 255, 0.12);
+    background-color: rgba(10, 28, 53, 0.50);
+
+    .content {
+        width: 100%;
+        height: calc(100% - 120px);
+        position: relative;
+
+        .chart {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.box-model1 {
+    width: 400px;
+    height: 280px;
+    margin-top: 20px;
+
+    .content {
+        width: 100%;
+        height: calc(100% - 90px) !important;
+        position: relative;
+
+        .chart {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.react-grid-layout {
+    padding-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.col-1 {
+    width: 455px;
+}
+
+.col-2 {
+    width: 930px;
+}
+
+.col-4 {
+    width: 1880px;
+}
+
+.line-1 {
+    height: 196px;
+}
+
+.line-2 {
+    height: 392px;
+}
+
+.line-3 {
+    height: 588px;
+}
+
+.line-4 {
+    height: 784px;
+}
+
+.buttonBox {
+    width: 100%;
+    height: 70px;
+    padding: 10px 0 0 0;
+    box-sizing: border-box;
+    text-align: right;
+
+    .ant-btn-primary {
+        width: 160px;
+        margin-left: 20px;
+    }
+}
+
+.canvasBox {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    overflow-y: auto;
+}
+
+.selectOneToTheme1 {
+    position: absolute;
+    top: 0;
+    right: 10px;
+
+    .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+        border: none;
+        background-color: transparent;
+    }
+
+    .ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input) .ant-select-selector {
+        border: none;
+    }
+}
+
+.selectNextToTheme1 {
+    height: 50px;
+    padding: 0 20px 0 0;
+    box-sizing: border-box;
+    text-align: right;
+
+    .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+        border: none !important;
+        background-color: transparent !important;
+    }
+
+    .ant-picker {
+        border: none !important;
+        background-color: transparent !important;
+    }
+}
+
+.selectOneToTheme2 {
+    position: absolute;
+    top: 14px;
+    right: 20px;
+}
+
+.selectNextToTheme2 {
+    height: 50px;
+    padding: 0 20px 0 0;
+    box-sizing: border-box;
+    text-align: right;
+}

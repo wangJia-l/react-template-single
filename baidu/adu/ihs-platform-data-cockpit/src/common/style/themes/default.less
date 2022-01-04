@@ -1,0 +1,47 @@
+@import "../colors.less";
+
+// 基础颜色定义
+@primary-color: @blue-6; // #1890ff;
+@info-color: @blue-6;
+@success-color: @green-6;
+@processing-color: @blue-6;
+@error-color: @red-6;
+@highlight-color: @red-6;
+@warning-color: @gold-6;
+@normal-color: @gray-5;
+@white: #fff;
+@black: #000;
+
+// Body背景色
+@body-background: #0b1525;
+
+// 字体定义
+@font-family: "PingFangSC-Regular", "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft YaHei", sans-serif;
+@code-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+
+// 字体大小定义
+@font-size-base: 14px;
+@font-size-lg: @font-size-base + 2px;
+@font-size-sm: 12px;
+
+// 文本颜色定义
+@text-color: fade(@black, 65%);
+@text-color-secondary: fade(@black, 45%);
+@text-color-warning: @gold-7;
+@text-color-danger: @red-7;
+@text-color-inverse: @white;
+@text-color-dark: fade(@white, 85%);
+@text-color-secondary-dark: fade(@white, 65%);
+
+// 边界颜色定义
+@border-color-base: hsv(0, 0, 85%); // base border outline a component
+@border-color-split: hsv(0, 0, 91%); // split border inside a component
+@border-color-inverse: @white;
+
+// 边界圆角定义
+@border-radius-base: 4px;
+@border-radius-lg: 6px;
+@border-radius-sm: 2px;
+
+@border-width-base: 1px; // width of the border for a component
+@border-style-base: solid; // style of a components border

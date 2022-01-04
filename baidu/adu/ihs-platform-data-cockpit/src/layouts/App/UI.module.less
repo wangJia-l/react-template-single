@@ -1,0 +1,24 @@
+.layout {
+    width: 100%;
+    padding: 0 20px 20px 20px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+
+    &::-webkit-scrollbar {  //chrome 和Safari，电脑端微信浏览器
+        width: 0 !important;
+        height: 0 !important; //这样在电脑端微信浏览器横向滚动会无效。不加!important则可
+    }
+    
+    &{
+        -ms-overflow-style: none;  //IE 10+
+        overflow: -moz-scrollbars-none;  //Firefox
+    }
+
+    .contentBox {
+        width: 100%;
+        height: auto;
+        overflow-y: scroll;
+        background-color: rgba(9, 23, 44, 0.5);
+        z-index: 0;
+    }
+}
